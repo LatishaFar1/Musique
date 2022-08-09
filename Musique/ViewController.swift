@@ -5,7 +5,10 @@
 //  Created by Tish Faroul on 8/8/22.
 //
 
+
 import UIKit
+import ShazamKit
+
 
 class ViewController: UIViewController {
 

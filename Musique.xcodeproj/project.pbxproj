@@ -13,6 +13,7 @@
 		C84185A328A1FDE200CF3E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84185A128A1FDE200CF3E28 /* Main.storyboard */; };
 		C84185A528A1FDE400CF3E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84185A428A1FDE400CF3E28 /* Assets.xcassets */; };
 		C84185A828A1FDE400CF3E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84185A628A1FDE400CF3E28 /* LaunchScreen.storyboard */; };
+		C84185B028A2008F00CF3E28 /* lofi-study.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C84185AF28A2008F00CF3E28 /* lofi-study.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C84185A428A1FDE400CF3E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84185A728A1FDE400CF3E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C84185A928A1FDE400CF3E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C84185AF28A2008F00CF3E28 /* lofi-study.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lofi-study.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C841859B28A1FDE200CF3E28 /* AppDelegate.swift */,
+				C84185AF28A2008F00CF3E28 /* lofi-study.mp3 */,
 				C841859D28A1FDE200CF3E28 /* SceneDelegate.swift */,
 				C841859F28A1FDE200CF3E28 /* ViewController.swift */,
 				C84185A128A1FDE200CF3E28 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84185B028A2008F00CF3E28 /* lofi-study.mp3 in Resources */,
 				C84185A828A1FDE400CF3E28 /* LaunchScreen.storyboard in Resources */,
 				C84185A528A1FDE400CF3E28 /* Assets.xcassets in Resources */,
 				C84185A328A1FDE200CF3E28 /* Main.storyboard in Resources */,
