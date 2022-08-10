@@ -43,6 +43,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        let song = songs[indexPath.row]
+        
+        cell.textLabel?.text = song.name
+        cell.detailTextLabel?.text = song.albumName
+        cell.accessoryType = .disclosureIndicator
+        
+        cell.textLabel?.font = UIFont(name: "Arial-Bold", size: 16)
+        cell.detailTextLabel?.font = UIFont(name: "Arial", size: 14)
+        
         return cell
     }
     
