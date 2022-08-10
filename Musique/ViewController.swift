@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func configureSongs(){
         songs.append(Song(name: "SongOne", albumName: "AlbumOne", artistName: "ArtistOne", imgName: "Cover", track: "lofi-study"))
         
-//        songs.append(Song(name: <#T##String#>, albumName: <#T##String#>, artistName: <#T##String#>, imgName: <#T##String#>, track: <#T##String#>))
+        songs.append(Song(name: "SongTwo", albumName: "AlbumTwo", artistName: "ArtistTwo", imgName: "Cover2", track: "lofi-study"))
     }
     
     //Table
@@ -48,9 +48,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = song.name
         cell.detailTextLabel?.text = song.albumName
         cell.accessoryType = .disclosureIndicator
-        
-        cell.textLabel?.font = UIFont(name: "Arial-Bold", size: 16)
-        cell.detailTextLabel?.font = UIFont(name: "Arial", size: 14)
+        cell.imageView?.image = UIImage(named: song.imgName)
+        cell.textLabel?.font = UIFont(name: "Arial-Bold", size: 18)
+        cell.detailTextLabel?.font = UIFont(name: "Arial", size: 12)
         
         return cell
     }
