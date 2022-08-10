@@ -21,10 +21,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureSongs()
         table.delegate = self
         table.dataSource = self
     }
 
+    
+    func configureSongs(){
+        songs.append(Song(name: "SongOne", albumName: "AlbumOne", artistName: "ArtistOne", imgName: "Cover", track: "lofi-study"))
+        
+//        songs.append(Song(name: <#T##String#>, albumName: <#T##String#>, artistName: <#T##String#>, imgName: <#T##String#>, track: <#T##String#>))
+    }
     
     //Table
     
@@ -32,20 +39,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return songs.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: <#T##IndexPath#>)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
+        //present the player
+        let position = indexPath.row
+        //songs
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "player") else {
+            return
+        }
+        present(vc, animated: true)
     }
+    
+    
 
 }
 
 
 
 struct Song {
-    
+    let name: String
+    let albumName: String
+    let artistName: String
+    let imgName: String
+    let track: String
 }
