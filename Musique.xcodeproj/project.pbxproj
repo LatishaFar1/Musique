@@ -58,8 +58,8 @@
 		C841859A28A1FDE200CF3E28 /* Musique */ = {
 			isa = PBXGroup;
 			children = (
+				C8477EDC28A343A30026733F /* Audio Tracks */,
 				C841859B28A1FDE200CF3E28 /* AppDelegate.swift */,
-				C84185AF28A2008F00CF3E28 /* lofi-study.mp3 */,
 				C841859D28A1FDE200CF3E28 /* SceneDelegate.swift */,
 				C841859F28A1FDE200CF3E28 /* ViewController.swift */,
 				C84185A128A1FDE200CF3E28 /* Main.storyboard */,
@@ -68,6 +68,14 @@
 				C84185A928A1FDE400CF3E28 /* Info.plist */,
 			);
 			path = Musique;
+			sourceTree = "<group>";
+		};
+		C8477EDC28A343A30026733F /* Audio Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				C84185AF28A2008F00CF3E28 /* lofi-study.mp3 */,
+			);
+			path = "Audio Tracks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
